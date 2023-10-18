@@ -1,0 +1,133 @@
+/* FILEPATH: /D:/Projetos/vem-ser-tech-ifood-adatech/01 frontend estático/exercicio 03/style.css */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    max-width: 35vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Estilos dos produtos */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.produto {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(50% - 10px);
+}
+
+.produto h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.produto table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.produto th {
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+    text-align: left;
+}
+
+.produto td {
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Estilos do formulário de cadastro */
+.cadastro {
+    margin: 20px;
+}
+
+.cadastro form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cadastro label {
+    font-size: 16px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+.cadastro input,
+.cadastro textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.cadastro button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#btnTopo {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cardápio - Candido Burguer</title>
+</head>
+
+<body>
+    <header>
+        <h1>Candido Burguer</h1>
+        <nav>
+            <a href="#produto1">Produto 1</a>
+            <a href="#produto2">Produto 2</a>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos" id="topo">
+            <h1>Cardápio de produtos disponíveis da Candido Burguer</h1>
+            <h1> ~~~ </h1>
+            <div class="produto" id="produto1">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>Burguer Montanha</h3>
+                <p>Carne artesanal 700g, mussarela, tomate, alface e ovos.</p>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Pequeno</td>
+                        <td>R$ 10,00</td>
+                    </tr>
+                    <tr>
+                        <td>Médio</td>
+                        <td>R$ 15,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grande</td>
+                        <td>R$ 20,00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="produto" id="produto2">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h3>Burguer Executivo + Coca</h3>
+                <p>Duas carnes artesanais 400g, tomate, mussararela, alface e coca de 350ml..</p>
+                <table>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Pequeno</td>
+                        <td>R$ 8,00</td>
+                    </tr>
+                    <tr>
+                        <td>Médio</td>
+                        <td>R$ 12,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grande</td>
+                        <td>R$ 16,00</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="cadastro">
+            <h2>Cadastro</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="#topo">
+                <button id="btnTopo">Voltar ao início</button>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Candido Burguer. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

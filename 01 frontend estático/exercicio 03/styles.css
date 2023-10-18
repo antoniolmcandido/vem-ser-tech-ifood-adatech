@@ -1,16 +1,18 @@
-/* FILEPATH: /D:/Projetos/vem-ser-tech-ifood-adatech/01 frontend estático/exercicio 03/style.css */
-
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+nav {
+    text-align: center;
+}
+
 h1,
 h2,
 h3 {
     margin: 0;
+    text-align: center;
 }
 
 a {
@@ -23,21 +25,22 @@ p {
 }
 
 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 35vh;
 }
 
-/* Estilos do cabeçalho */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
 }
 
-/* Estilos dos produtos */
 .produtos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px;
 }
 
@@ -83,7 +86,6 @@ header {
     padding: 10px;
 }
 
-/* Estilos do formulário de cadastro */
 .cadastro {
     margin: 20px;
 }

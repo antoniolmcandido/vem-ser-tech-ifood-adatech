@@ -11,16 +11,16 @@
 
 <body>
     <header>
-        <h1>Candido Burguer</h1>
+        <h1 id="topo">Candido Burguer</h1>
         <nav>
-            <a href="#produto1">Produto 1</a>
-            <a href="#produto2">Produto 2</a>
+            <a href="#produto1">Produto 1 |</a>
+            <a href="#produto2">Produto 2 |</a>
+            <a href="#cadastro">Cadastro</a>
         </nav>
     </header>
     <main>
-        <section class="produtos" id="topo">
-            <h1>Cardápio de produtos disponíveis da Candido Burguer</h1>
-            <h1> ~~~ </h1>
+        <section class="produtos">
+            <h1>Cardápio de produtos disponíveis da lanchonete Candido Burguer</h1>
             <div class="produto" id="produto1">
                 <img src="produto1.jpg" alt="Produto 1">
                 <h3>Burguer Montanha</h3>
@@ -68,7 +68,7 @@
                 </table>
             </div>
         </section>
-        <section class="cadastro">
+        <section class="cadastro" id="cadastro">
             <h2>Cadastro</h2>
             <form>
                 <label for="nome">Nome:</label>
@@ -81,12 +81,12 @@
                 <textarea id="mensagem" name="mensagem"></textarea>
                 <button type="submit">Enviar</button>
             </form>
-            <a href="#topo">
-                <button id="btnTopo">Voltar ao início</button>
-            </a>
         </section>
     </main>
     <footer>
+        <a href="#topo">
+            <button id="btnTopo">Voltar ao início</button>
+        </a>
         <p>&copy; 2023 Candido Burguer. Todos os direitos reservados.</p>
     </footer>
 </body>

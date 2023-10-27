@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Pixelify+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: chocolate;
+    font-family: 'Loved by the King', cursive;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+i {
+    transition: .5s;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: chocolate;
+    color: white;
+
+    >nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        >li {
+            padding: 1rem;
+            transition: .5s ease-in-out;
+
+            :hover {
+                color: yellow;
+            }
+        }
+    }
+
+    /*Responsividade do header*/
+    @media (max-width: 768px) {
+        font-size: .8rem;
+
+        >a {
+            display: none;
+        }
+    }
+}
+
+.index-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+
+    >h1 {
+        color: white;
+        background-color: transparent;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
+    }
+
+    #p-home {
+        font-weight: bolder;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+    }
+
+    >section {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: transparent;
+
+        .card {
+            height: 300px;
+            flex-basis: 200px;
+            padding: 2rem;
+            margin: 7rem 2rem;
+            background-color: white;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+
+            >img {
+                height: 100px;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.164);
+            }
+
+            >img:hover {
+                transform: scale(2.5);
+                transition: transform 0.5s ease-in-out;
+            }
+
+            >h2 {
+                font-size: 1.2rem;
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
+            }
+
+            >p {
+                font-size: .7rem;
+            }
+        }
+    }
+
+    /*Responsividade da main*/
+    @media (max-width: 768px) {
+        >h1 {
+            color: white;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.425);
+        }
+
+        #p-home {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        >section .card {
+            height: 200px;
+            width: 100px;
+            margin: .5rem;
+            padding: 1em;
+
+            >img {
+                height: 70px;
+            }
+
+            >h2 {
+                font-size: .9rem;
+            }
+        }
+
+        >section .card:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem 5rem;
+    height: 15%;
+    background-color: chocolate;
+    color: white;
+
+    >nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        font-size: .7rem;
+
+        >li {
+            padding: 1rem;
+            color: white;
+
+            :hover {
+                color: yellow;
+            }
+        }
+    }
+
+    >ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        /*Responsividade do footer*/
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        >li {
+            padding: 1rem;
+        }
+    }
+}

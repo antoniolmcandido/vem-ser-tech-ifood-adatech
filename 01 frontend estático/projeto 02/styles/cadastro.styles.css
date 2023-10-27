@@ -1,0 +1,94 @@
+.cadastro-main {
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    padding: 6rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem;
+        color: white;
+        width: 35%;
+        background-color: chocolate;
+        border-radius: .5rem;
+        padding: 0.5rem;
+        border: 1px solid chocolate;
+        box-shadow: 5px 5px 20px rgba(255, 255, 255, 255);
+
+        >input {
+            width: 75%;
+            border-radius: .5rem;
+            border: 1px solid white;
+            box-shadow: 5px 5px 20px rgba(255, 255, 255, 255);
+            margin: .5rem;
+            padding: .1rem;
+            color: white;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+            text-align: center;
+        }
+
+        >label {
+            background-color: transparent;
+            color: white;
+        }
+
+        .buttons {
+            background-color: transparent;
+        }
+
+        .input-button {
+            background-color: transparent;
+            padding: .5rem;
+            border: 1px solid white;
+            border-radius: .5rem;
+            margin: 0rem .5rem;
+            color: white;
+        }
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0.25rem .5rem;
+        background-color: chocolate;
+        color: white;
+
+        >nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            font-size: .7rem;
+
+            >li {
+                padding: 1rem;
+                color: white;
+
+                :hover {
+                    color: yellow;
+                }
+            }
+        }
+
+        >ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+
+            /*Responsividade do footer*/
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            >li {
+                padding: 1rem;
+            }
+        }
+
+    }
+}

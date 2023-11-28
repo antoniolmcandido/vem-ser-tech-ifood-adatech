@@ -2,11 +2,11 @@
 
 ## O que?
 
-### Desenvolver, utilizando os conceitos abordados ao longo do módulo, uma aplicação de lista de tarefas (ToDo List).
+### Desenvolver, utilizando os conceitos abordados ao longo do módulo, uma aplicação de lista de tarefas (ToDo List)
 
 ## Requisitos
 
-### Dentre as funcionalidades, espera-se que seja possível:
+### Dentre as funcionalidades, espera-se que seja possível
 
 ```md
 1. Adicionar uma tarefa

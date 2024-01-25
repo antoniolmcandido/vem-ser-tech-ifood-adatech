@@ -52,7 +52,6 @@ function obterTarefa(id) {
     }
 }
 
-// Adicionar uma tarefas
 adicionarTarefa(1, "Comprar pão", "Ir ao mercado", "pendente")
 adicionarTarefa(2, "Comprar queijo", "Ir ao mercado", "pendente")
 adicionarTarefa(3, "Comprar farinha", "Ir ao mercado", "pendente")

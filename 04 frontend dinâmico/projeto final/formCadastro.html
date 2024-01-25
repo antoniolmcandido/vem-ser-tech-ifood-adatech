@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Cadastro</title>
+
+  <script src="classe.js"></script>
+</head>
+
+<body >
+  <main class="main-container">
+    <h2 class="title">Cadastro de churrasco</h2>
+  <section class="form-container">
+    <h4>Informe a quantidade de pessoas:</h4>
+    <form>
+      <label class="form-label" for="qtdHomens">Quantidade de Homens:</label>
+      <input class="form-input" type="number" id="qtdHomens" name="qtdHomens" min="0">
+
+      <label class="form-label" for="qtdeMulheres">Quantidade de Mulheres:</label>
+      <input class="form-input" type="number" id="qtdeMulheres" name="qtdeMulheres" min="0">
+
+      <label class="form-label" for="qtdCriancas">Quantidade de Crianças:</label>
+      <input class="form-input" id="qtdCriancas" name="qtdCriancas" min="0">
+
+      <button class="form-button" type="button" onclick="calcularChurrasco()">Finalizar</button>
+    </form>
+  </section>
+</main>
+
+  <script>
+    function calcularChurrasco() {
+      const homens = parseInt(document.getElementById("qtdHomens").value);
+      const mulheres = parseInt(document.getElementById("qtdeMulheres").value);
+      const criancas = parseInt(document.getElementById("qtdCriancas").value);
+      
+      const churrascoDoFimDeSemana = new Churrasco(homens, mulheres, criancas);
+
+      const resultado = churrascoDoFimDeSemana.calcularTodos();
+
+
+      fetch('http://localhost:3000/churrascos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(resultado),
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Churrasco criado no servidor:', data);
+          window.location.href = 'index.html';
+        })
+        .catch(error => {
+          console.error('Erro ao criar churrasco no servidor:', error);
+          alert("Erro ao criar churrasco no servidor")
+          window.location.href = 'index.html';
+        });
+    }
+  </script>
+</body>
+
+</html>

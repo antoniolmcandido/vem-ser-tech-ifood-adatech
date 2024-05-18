@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Poppins',
+    monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-vector/flat-design-black-white-halftone-background_23-2150607369.jpg?w=1380&t=st=1708721714~exp=1708722314~hmac=4d510545e00accddfe25f0b51d374c1088b32fedf618005b808d749644532332'); /* Substitua pela URL da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(100, 120, 130);
+}
+
+.form {
+  width: 260px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    font-family: 'Poppins', sans-serif;
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-left: 4.5em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.67);
+
+}
+
+.card-image-hero {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid forestgreen;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card-image-hero img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-image-villain {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid darkred;
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card-image-villain img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title-hero {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    color: forestgreen;
+}
+
+.card-title-villain {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    color: darkred;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
